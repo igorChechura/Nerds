@@ -20,3 +20,50 @@ img {
 	/* min-width: 100%;
 	height: auto; */
 }
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.main-header {
+	padding-top: 50px;
+
+	background-color: #eeeeee;
+}
+
+.main-navigation .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-header-logo {
+	width: 160px;
+	height: 65px;
+}
+
+.site-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 440px;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.cart-navigation {
+	display: flex;
+	justify-content: flex-end;
+	width: 160px;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+
+
