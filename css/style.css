@@ -35,7 +35,7 @@ input[type="radio"].visually-hidden {
 	white-space: nowrap;
 
 	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
+	clip: rect(0, 0, 0, 0);
 	overflow: hidden;
 }
 
@@ -336,7 +336,7 @@ input[type="radio"].visually-hidden {
 .services-item-image {
 	width: 300px;
 	height: 146px;
-	margin-bottom: 18px;
+	margin-bottom: 26px;
 
 	background-color: #fb565a;
 }
@@ -389,4 +389,142 @@ input[type="radio"].visually-hidden {
 
 .services-item:nth-child(3n) a:active {
 	background-color: #e5a722;
+}
+
+/* section.services end*/
+
+/* section.about */
+.about {
+	background-color: transparent;
+}
+
+.about-inner-container {
+	padding-bottom: 80px;
+
+	border-bottom: 2px solid #eeeeee;
+}
+
+.about-heading {
+	padding-top: 74px;
+
+	background-image: url("../img/nerds-about.jpg");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.about-heading .about-slogan {
+	width: 660px;
+	margin: 0;
+	margin-bottom: 33px;
+}
+
+.about-slogan strong {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.about-heading p {
+	width: 660px;
+	margin: 0;
+	margin-bottom: 39px;
+}
+
+.about-columns {
+	/* outline: 1px solid green; */
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-services {
+	width: 660px;
+}
+
+.about-services h3 {
+	margin: 0;
+	margin-bottom: 24px;
+
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.about-services-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.about-services-list li {
+	padding-left: 36px;	
+	margin-bottom: 24px;
+
+	position: relative;
+}
+
+.about-services-list li:last-child {
+	margin-bottom: 0;
+}
+
+.about-services-list li::before {
+	content: "";
+	
+	width: 25px;
+	height: 2px;
+
+	position: absolute;
+	top: 11px;
+	left: 0;
+
+	background-color: #fb565a;
+}
+
+.about-accuracy {
+	width: 360px;
+}
+
+.about-accuracy h3 {
+	margin: 0;
+	margin-bottom: 40px;
+
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000000;
+}
+
+.about-accuracy-list {
+	display: flex;
+	justify-content: space-between;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.about-accuracy-list li {
+	width: 100px;
+
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #000000;
+}
+
+.about-accuracy-list .about-accuracy-percent {
+	display: block;
+	margin-bottom: 18px;
+
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 700;
+	color: #000000;
 }
