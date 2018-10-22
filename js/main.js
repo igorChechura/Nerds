@@ -8,17 +8,12 @@ function changeSlide(evt) {
 	}
 	this.classList.add('active');
 	
-	var currentItem;
-	for (var c = 0;  c < featuresSliderButtons.length; c++) {
-		if(featuresSliderButtons[c].classList.contains('active')) {
-			currentItem = c;
-		}
-	}
-
 	for (var r = 0; r < featuresItems.length; r++) {
 		featuresItems[r].classList.add('visually-hidden');
+		if(featuresSliderButtons[r].classList.contains('active')) {
+			featuresItems[r].classList.remove('visually-hidden');
+		}
 	}
-	featuresItems[currentItem].classList.remove('visually-hidden');
 }
 
 for (var i = 0; i < featuresSliderButtons.length; i++) {
