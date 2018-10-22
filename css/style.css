@@ -68,7 +68,8 @@ input[type="radio"].visually-hidden {
 }
 
 .button:active {
-	color: #e26c6e;
+/* 	color: #e26c6e; */
+	color: rgba(255, 255, 255, 0.3);
 
 	background-color: #d7373b;
 
@@ -207,7 +208,6 @@ input[type="radio"].visually-hidden {
 	min-height: 432px;
 	margin: 0;
 	padding: 0;
-	/* position: relative; */
 
 	list-style: none;
 }
@@ -215,10 +215,6 @@ input[type="radio"].visually-hidden {
 .features-item {
 	padding-top: 78px;
 	padding-bottom: 80px;
-	/* position: absolute;
-	top: 0;
-	left: 0;
-	right: 0; */
 }
 
 .features-item-1 {
@@ -297,3 +293,90 @@ input[type="radio"].visually-hidden {
 	border-radius: 50%;
 }
 
+/* section.features end */
+
+/* section.services */
+
+.services {
+	background-color: transparent;	
+}
+
+.services-inner-container {
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+	border-bottom: 2px solid #eeeeee;
+}
+
+.services-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.services-item {
+	width: 300px;
+	margin-right: 100px;
+	margin-top: 80px;
+}
+
+.services-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.services-item:nth-child(1),
+.services-item:nth-child(2),
+.services-item:nth-child(3) {
+	margin-top: 0;
+}
+
+.services-item img {
+	margin-bottom: 18px;
+
+	background-color: #fb565a;
+}
+
+.services-item h3 {
+	margin: 0;
+	margin-bottom: 16px;
+
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.services-item p {
+	margin: 0;
+	margin-bottom: 31px;
+}
+
+.services-item:nth-child(3n-1) a {
+	background-color: #00ca74;
+}
+
+.services-item:nth-child(3n-1) a:hover,
+.services-item:nth-child(3n-1) a:focus {
+	background-color: #00bc6c;
+}
+
+.services-item:nth-child(3n-1) a:active {
+	background-color: #00aa62;
+}
+
+.services-item:nth-child(3n) a {
+	background-color: #efc84a;
+}
+
+.services-item:nth-child(3n) a:hover,
+.services-item:nth-child(3n) a:focus {
+	background-color: #eab534;
+}
+
+.services-item:nth-child(3n) a:active {
+	background-color: #e5a722;
+}
