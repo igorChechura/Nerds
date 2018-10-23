@@ -537,3 +537,83 @@ input[type="radio"].visually-hidden {
 }
 
 /* section.about end */
+
+/* section.partners */
+
+.partners {
+	background-color: transparent;
+}
+
+.partners-list {
+	display: flex;
+	justify-content: space-between;
+
+	margin: 0;
+	padding: 0;
+	padding: 46px 30px;
+
+	list-style: none;
+
+	border-bottom: 2px solid #eeeeee;
+}
+
+.partners-item a {
+	display: block;
+	width: 209px;
+	height: 87px;
+
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.partners-item:nth-child(1) a {
+	background-image: url("../img/html-academy-logo.png");
+}
+
+.partners-item:nth-child(2) a {
+	background-image: url("../img/borodinski-logo.png");
+}
+
+.partners-item:nth-child(3) a {
+	background-image: url("../img/pink-logo.png");
+}
+
+.partners-item:nth-child(4) a {
+	background-image: url("../img/mishka-logo.png");
+}
+
+.partners-item:nth-child(1) a:hover,
+.partners-item:nth-child(1) a:focus {
+	background-image: url("../img/html-academy-logo-hover.png");
+}
+
+.partners-item:nth-child(2) a:hover,
+.partners-item:nth-child(2) a:focus {
+	background-image: url("../img/borodinski-logo-hover.png");
+}
+
+.partners-item:nth-child(3) a:hover,
+.partners-item:nth-child(3) a:focus {
+	background-image: url("../img/pink-logo-hover.png");
+}
+
+.partners-item:nth-child(4) a:hover,
+.partners-item:nth-child(4) a:focus {
+	background-image: url("../img/mishka-logo-hover.png");
+}
+
+.partners-item:nth-child(1) a:active {
+	background-image: url("../img/html-academy-logo-active.png");
+}
+
+.partners-item:nth-child(2) a:active {
+	background-image: url("../img/borodinski-logo-active.png");
+}
+
+.partners-item:nth-child(3) a:active {
+	background-image: url("../img/pink-logo-active.png");
+}
+
+.partners-item:nth-child(4) a:active {
+	background-image: url("../img/mishka-logo-active.png");
+
