@@ -399,7 +399,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about-inner-container {
-	padding-bottom: 80px;
+	padding-bottom: 73px;
 
 	border-bottom: 2px solid #eeeeee;
 }
@@ -432,8 +432,6 @@ input[type="radio"].visually-hidden {
 }
 
 .about-columns {
-	/* outline: 1px solid green; */
-
 	display: flex;
 	justify-content: space-between;
 }
@@ -502,7 +500,7 @@ input[type="radio"].visually-hidden {
 
 .about-accuracy-list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 
 	margin: 0;
 	padding: 0;
@@ -511,7 +509,8 @@ input[type="radio"].visually-hidden {
 }
 
 .about-accuracy-list li {
-	width: 100px;
+	min-width: 100px;
+	margin-right: 19px;
 
 	font-size: 16px;
 	line-height: 18px;
@@ -519,12 +518,22 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 }
 
+.about-accuracy-list li:last-child {
+	margin-right: 0;
+}
+
 .about-accuracy-list .about-accuracy-percent {
 	display: block;
-	margin-bottom: 18px;
+	margin-bottom: 19px;
 
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 700;
 	color: #000000;
 }
+
+.about-accuracy-percent sup {
+	font-size: 28px;
+}
+
+/* section.about end */
