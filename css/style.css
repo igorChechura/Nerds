@@ -17,8 +17,8 @@ a {
 }
 
 img {
-	/* max-width: 100%;
-	height: auto; */
+	max-width: 100%;
+	height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -60,6 +60,8 @@ input[type="radio"].visually-hidden {
 	background-color: #fb565a;
 
 	border-radius: 3px;
+
+	transition: background-color 0.3s ease;
 }
 
 .button:hover,
@@ -68,7 +70,6 @@ input[type="radio"].visually-hidden {
 }
 
 .button:active {
-/* 	color: #e26c6e; */
 	color: rgba(255, 255, 255, 0.3);
 
 	background-color: #d7373b;
@@ -597,6 +598,8 @@ input[type="radio"].visually-hidden {
 
 	background-repeat: no-repeat;
 	background-position: center;
+	
+	transition: background-image 0.2s ease;
 }
 
 .partners-item:nth-child(1) a {
@@ -713,3 +716,66 @@ input[type="radio"].visually-hidden {
 }
 
 /* section.contacts end */
+
+/* footer */
+
+.main-footer {
+	display: flex;
+
+	padding-top: 70px;
+	padding-bottom: 70px;
+
+	background-color: transparent;
+}
+
+.main-footer .social-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	width: 260px;
+	margin: 0;
+	padding: 0;
+	margin-right: 140px;
+
+	list-style: none;
+
+}
+
+.social-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 0;
+	width: 80px;
+	height: 80px;
+
+	background-color: #e1e1e1;
+
+	border-radius: 50%
+}
+
+.social-button:active path {
+	fill: rgba(255, 255, 255, 0.3);
+}
+
+.social-discount {
+	margin: 0;
+	padding: 5px 0;
+
+	line-height: 22px;
+	
+}
+
+.social-discount span {
+	display: block;
+	margin-bottom: 10px;
+	
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+	color: #000000;
+}
+
+/* footer end */
