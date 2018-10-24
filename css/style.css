@@ -548,21 +548,52 @@ input[type="radio"].visually-hidden {
 
 .partners-list {
 	display: flex;
-	justify-content: space-between;
 
+	width: 100%;
 	margin: 0;
 	padding: 0;
-	padding: 46px 30px;
+	padding-top: 46px;
+	padding-bottom: 46px;
 
 	list-style: none;
 
 	border-bottom: 2px solid #eeeeee;
 }
 
+.partners-item {
+	width: 26%;
+
+	position: relative;
+}
+
+.partners-item:first-child,
+.partners-item:last-child {
+	width: 24%;
+}
+
+.partners-item:before {
+	content: "";
+
+	display: block;
+	width: 2px;
+	height: 52px;
+
+	position: absolute;
+	right: -1px;
+	top: 18px;
+
+	background-color: #eeeeee;
+}
+
+.partners-item:last-child:before {
+	display: none;
+}
+
 .partners-item a {
 	display: block;
 	width: 209px;
 	height: 87px;
+	margin: 0 auto;
 
 	background-repeat: no-repeat;
 	background-position: center;
@@ -681,3 +712,4 @@ input[type="radio"].visually-hidden {
 	padding-right: 45px;
 }
 
+/* section.contacts end */
