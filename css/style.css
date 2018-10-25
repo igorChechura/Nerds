@@ -786,12 +786,29 @@ input[type="radio"].visually-hidden {
 .modal {
 	position: fixed;
 
+	z-index: 2;
+
 	display: block;
 
 	color: #000000;
 
 	background-color: #ffffff;
-	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5), 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	z-index: 1;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .modal-contact {
@@ -800,13 +817,13 @@ input[type="radio"].visually-hidden {
 
 	width: 760px;
 	margin-left: -480px;
-	padding: 84px 100px;
+	padding: 67px 100px 84px;
 }
 
 .modal-close {
 	position: absolute;
-	top: 100px;
-	right: 86px;
+	top: 76px;
+	right: 88px;
 
 	width: 24px;
 	height: 24px;
@@ -831,6 +848,7 @@ input[type="radio"].visually-hidden {
 	height: 4px;
 
 	background-color: #fecccd;
+	border-radius: 2px;
 }
 
 .modal-close::before {
@@ -839,4 +857,96 @@ input[type="radio"].visually-hidden {
 
 .modal-close::after {
 	transform: rotate(-45deg);
+}
+
+.modal-close:hover::before,
+.modal-close:focus::before,
+.modal-close:hover::after,
+.modal-close:focus::after {
+	background-color: #fb565a;
+	transition: background-color 0.3s ease;
+}
+
+.modal-close:active::before,
+.modal-close:active::after {
+	background-color: #ffeeee;
+}
+
+.modal-description {
+	margin: 0;
+	margin-bottom: 42px;
+
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.contact-form .form-columns {
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 34px;
+}
+
+.contact-form .form-columns-item {
+	width: 360px;
+}
+
+.contact-form label {
+	display: inline-block;
+
+	margin-bottom: 10px;
+
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.contact-form input,
+.contact-form textarea {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px 15px;
+
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #444444;
+
+	background-color: #ffffff;
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
+
+	outline: none;
+
+	transition: border-color 0.3s ease;
+}
+
+.contact-form textarea {
+	height: 118px;
+	margin-bottom: 47px;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+	border-color: #b4b9bb;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	border-color: #000000;
+	color: #000000;
+}
+
+.contact-form .input-invalid {
+	border-color: #e74246;
+	color: #e74246
+}
+
+.contact-form .button {
+	padding-left: 84px;
+	padding-right: 84px;
 }
