@@ -1010,3 +1010,9 @@ input[type="radio"].visually-hidden {
 }
 
 /* section.modal-contact end */
+
+/* catalog page styles */
+
+.inner-heading {
+    background-color: #eeeeee;
+}
