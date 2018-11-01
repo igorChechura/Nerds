@@ -1014,12 +1014,16 @@ input[type="radio"].visually-hidden {
 /* catalog page styles */
 
 .inner-heading {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 78px;
+    padding-bottom: 107px;
     
     background-color: #eeeeee;
 }
 
 .inner-heading h1 {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	color: #000000;
     text-align: center;
 }

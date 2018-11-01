@@ -17,11 +17,11 @@
 				<ul class="site-navigation">
 					<li><a href="#">Студия</a></li>
 					<li><a href="#">Клиенты</a></li>
-					<li><a href="#">Магазин</a></li>
+					<li class="site-navigation-current"><a href="#">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 				<ul class="cart-navigation">
-					<li class="site-navigation-current"><a class="cart-link" href="">Корзина</a></li>
+					<li><a class="cart-link" href="">Корзина</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -30,7 +30,63 @@
 	<main>
 	    <section class="inner-heading">
 	        <h1 class="container">Магазин готовых шаблонов</h1>
-	    </section>		
+		</section>
+		
+		<section class="filters">
+			<h2 class="visually-hidden">Фильтр шаблонов</h2>
+			<form class="filter" action="https://echo.htmlacademy.ru" method="GET">
+				<fieldset>
+					<legend>Стоимость:</legend>
+					<input type="range" min="0" max="20000" value="0, 15000">
+				</fieldset>
+				<fieldset>
+					<legend>Сетка:</legend>
+					<ul>
+						<li>
+							<input type="radio" name="grid-type">
+							<label for="">Адаптивная</label>
+						</li>
+						<li>
+							<input type="radio" name="grid-type">
+							<label for="">Фиксированная</label>
+						</li>
+						<li>
+							<input type="radio" name="grid-type">
+							<label for="">Резиновая</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Особенности:</legend>
+					<ul>
+						<li>
+							<input type="checkbox">
+							<label for="">Слайдер</label>
+						</li>
+						<li>
+							<input type="checkbox">
+							<label for="">Блок преимуществ</label>
+						</li>
+						<li>
+							<input type="checkbox">
+							<label for="">Новости</label>
+						</li>
+						<li>
+							<input type="checkbox">
+							<label for="">Галерея</label>
+						</li>
+						<li>
+							<input type="checkbox">
+							<label for="">Корзина</label>
+						</li>
+					</ul>
+				</fieldset>
+			</form>
+		</section>
+
+		<section class="catalog">
+
+		</section>
 
 		<section class="contacts">
 			<iframe class="contacts-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1540300341369" frameborder="0" style="border:0" allowfullscreen></iframe>
