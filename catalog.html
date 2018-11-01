@@ -43,16 +43,16 @@
 					<legend>Сетка:</legend>
 					<ul>
 						<li>
-							<input type="radio" name="grid-type">
-							<label for="">Адаптивная</label>
+							<input type="radio" name="grid-type" value="responsive" id="filter-responsive">
+							<label for="filter-responsive">Адаптивная</label>
 						</li>
 						<li>
-							<input type="radio" name="grid-type">
-							<label for="">Фиксированная</label>
+							<input type="radio" name="grid-type" value="fixed" id="filter-fixed">
+							<label for="filter-fixed">Фиксированная</label>
 						</li>
 						<li>
-							<input type="radio" name="grid-type">
-							<label for="">Резиновая</label>
+							<input type="radio" name="grid-type" value="stretch" id="filter-stretch">
+							<label for="filter-stretch">Резиновая</label>
 						</li>
 					</ul>
 				</fieldset>
@@ -60,32 +60,61 @@
 					<legend>Особенности:</legend>
 					<ul>
 						<li>
-							<input type="checkbox">
-							<label for="">Слайдер</label>
+							<input type="checkbox" name="slider" id="filter-slider">
+							<label for="filter-slider">Слайдер</label>
 						</li>
 						<li>
-							<input type="checkbox">
-							<label for="">Блок преимуществ</label>
+							<input type="checkbox" name="advantages-box" id="filter-advantages-box">
+							<label for="filter-advantages-box">Блок преимуществ</label>
 						</li>
 						<li>
-							<input type="checkbox">
-							<label for="">Новости</label>
+							<input type="checkbox" name="news" id="filter-news">
+							<label for="filter-news">Новости</label>
 						</li>
 						<li>
-							<input type="checkbox">
-							<label for="">Галерея</label>
+							<input type="checkbox" name="gallery" id="filter-gallery">
+							<label for="filter-gallery">Галерея</label>
 						</li>
 						<li>
-							<input type="checkbox">
-							<label for="">Корзина</label>
+							<input type="checkbox" name="cart" id="filter-cart">
+							<label for="filter-cart">Корзина</label>
 						</li>
 					</ul>
 				</fieldset>
+				<button class="filter-button button" type="submit">Показать</button>
 			</form>
 		</section>
 
 		<section class="catalog">
-
+			<h2 class="visually-hidden">Список шаблонов</h2>
+			<span>Сортировать:</span>
+			<ul class="sort-list">
+				<li><a href="#">По цене</a></li>
+				<li><a href="#">По типу</a></li>
+				<li><a href="#">По названию</a></li>
+			</ul>
+			<a href="#"><span class="visually-hidden">Сортировать по убыванию</span></a>
+			<a href="#"><span class="visually-hidden">Сортировать по возрастанию</span></a>
+			<ul class="catalog-list">
+				<li class="catalog-item">
+					<img src="" alt="">
+				</li>
+				<li class="catalog-item">
+					<img src="" alt="">
+				</li>
+				<li class="catalog-item">
+					<img src="" alt="">
+				</li>
+				<li class="catalog-item">
+					<img src="" alt="">
+				</li>
+				<li class="catalog-item">
+					<img src="" alt="">
+				</li>
+				<li class="catalog-item">
+					<img src="" alt="">
+				</li>
+			</ul>
 		</section>
 
 		<section class="contacts">
