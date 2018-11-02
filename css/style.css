@@ -1011,7 +1011,9 @@ input[type="radio"].visually-hidden {
 
 /* section.modal-contact end */
 
-/* catalog page styles */
+/* ------ catalog page styles ------ */
+
+/* section.inner-heading */
 
 .inner-heading {
     padding-top: 78px;
@@ -1027,3 +1029,92 @@ input[type="radio"].visually-hidden {
 	color: #000000;
     text-align: center;
 }
+
+/* section.inner-heading end */
+
+/* .catalog-columns */
+
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
+
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+/* section.filters */
+
+.filters {
+	width: 260px;
+}
+
+.filter fieldset {
+	padding: 0;
+	margin: 0;
+
+	border: none;
+}
+
+.filter legend {
+	margin-bottom: 17px;
+
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.filter ul {
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+
+	line-height: 20px;
+}
+
+.filter-option {
+	margin-bottom: 20px;
+	padding-left: 36px;	
+}
+
+.filter-option label {
+	position: relative;
+
+	cursor: pointer;
+	user-select: none;
+}
+
+/* section.filters end */
+
+/* section.catalog */
+
+.catalog {
+	width: 760px;
+}
+
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+
+	padding: 0;
+	margin: 0;
+
+	list-style: none
+}
+
+.catalog-item {
+	width: 360px;
+	margin-right: 40px;
+	margin-bottom: 35px;
+}
+
+.catalog-item:nth-child(2n) {
+	margin-right: 0;
+}
+
+/* section.catalog end */
+
+/* .catalog-columns end */
+
+/* ------ catalog page styles ------ end */
