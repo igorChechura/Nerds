@@ -1081,8 +1081,25 @@ input[type="radio"].visually-hidden {
 .filter-option label {
 	position: relative;
 
+	display: inline-block;
+
 	cursor: pointer;
 	user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+	content: "";
+
+	position: absolute;
+	left: -36px;
+	top: -2px;
+
+	width: 23px;
+	height: 23px;
+
+	background-image: url("../img/checkbox-off.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 /* section.filters end */
