@@ -88,14 +88,21 @@
 	
 			<section class="catalog">
 				<h2 class="visually-hidden">Список шаблонов</h2>
-				<span>Сортировать:</span>
-				<ul class="sort-list">
-					<li><a href="#">По цене</a></li>
-					<li><a href="#">По типу</a></li>
-					<li><a href="#">По названию</a></li>
-				</ul>
-				<a href="#"><span class="visually-hidden">Сортировать по убыванию</span></a>
-				<a href="#"><span class="visually-hidden">Сортировать по возрастанию</span></a>
+				<div class="sort-columns">
+				    <span>Сортировать:</span>
+                    <div class="sort-inner-columns">
+                        <ul class="sort-list">
+                            <li><a href="#">По цене</a></li>
+                            <li><a href="#">По типу</a></li>
+                            <li><a href="#">По названию</a></li>
+                        </ul>
+                        <div class="sort-columns-arrows">
+                            <a href="#"><span class="visually-hidden">Сортировать по убыванию</span></a>
+                            <a href="#"><span class="visually-hidden">Сортировать по возрастанию</span></a>
+                        </div>
+                    </div>                   
+				</div>
+				
 				<ul class="catalog-list">
 					<li class="catalog-item">
 						<img src="img/img-sedona.jpg" alt="">
