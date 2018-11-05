@@ -1188,6 +1188,10 @@ input[type="radio"].visually-hidden {
 
 /* section.catalog */
 
+.sort-columns {
+	display: flex;
+}
+
 .catalog {
 	width: 760px;
 }
