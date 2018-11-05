@@ -1190,7 +1190,6 @@ input[type="radio"].visually-hidden {
 
 .sort-columns {
 	display: flex;
-	justify-content: space-between;
 }
 
 .catalog {
