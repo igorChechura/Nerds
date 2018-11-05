@@ -1118,6 +1118,14 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/radio-on-hover.svg");
 }
 
+.filter-input-radio:disabled + label::before {
+    background-image: url("../img/radio-off-disabled.svg") !important;
+}
+
+.filter-input-radio:checked:disabled + label::before {
+    background-image: url("../img/radio-on-disabled.svg") !important;
+}
+
 .filter-input-checkbox + label::before {
 	content: "";
 
@@ -1147,6 +1155,14 @@ input[type="radio"].visually-hidden {
 
 .filter-input-checkbox:checked:hover + label::before {
     background-image: url("../img/checkbox-on-hover.svg");
+}
+
+.filter-input-checkbox:disabled + label::before {
+    background-image: url("../img/checkbox-off-disabled.svg") !important;
+}
+
+.filter-input-checkbox:checked:disabled + label::before {
+    background-image: url("../img/checkbox-on-disabled.svg") !important;
 }
 
 .filter-button {
