@@ -1332,6 +1332,10 @@ input[type="radio"].visually-hidden {
 	display: block;
 }
 
+.catalog-item-buy:hover {
+    display: block;
+}
+
 .catalog-item svg {
 	display: block;
 }
