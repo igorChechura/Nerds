@@ -1038,7 +1038,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	justify-content: space-between;
 
-	padding-top: 60px;
+	padding-top: 58px;
 	padding-bottom: 60px;
 }
 
@@ -1192,7 +1192,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	justify-content: space-between;
 
-	margin-bottom: 50px;
+	margin-bottom: 56px;
 }
 
 .sort-columns h3 {
