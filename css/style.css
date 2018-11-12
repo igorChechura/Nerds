@@ -1305,6 +1305,18 @@ input[type="radio"].visually-hidden {
 	margin-right: 0;
 }
 
+.catalog-item:hover .catalog-item-link {
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.catalog-item:hover img {
+	border-color: #4d4d4d;
+}
+
+.catalog-item:hover path {
+	fill: #4d4d4d;
+}
+
 .catalog-item-link {
 	display: block;
 
