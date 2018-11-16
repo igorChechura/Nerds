@@ -1324,7 +1324,7 @@ input[type="radio"].visually-hidden {
 	border-top-right-radius: 4px;
 }
 
-.catalog-item-link:hover,
+/* .catalog-item-link:hover,
 .catalog-item-link:focus {
 	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
@@ -1346,15 +1346,13 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-buy:hover {
     display: block;
-}
+} */
 
 .catalog-item svg {
 	display: block;
 }
 
 .catalog-item-buy {
-	display: none;
-
 	position: absolute;
 	bottom: 0;
 
