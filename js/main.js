@@ -101,3 +101,17 @@ function toggleModal() {
 
 toggleModal();
 
+/* product card animation */
+
+var catalogItem = document.querySelectorAll('.catalog-item');
+
+for (var i = 0; i < catalogItem.length; i++) {
+	catalogItem[i].addEventListener('mouseenter', function(evt){
+		var catalogItemBuy = this.querySelector('.catalog-item-buy');
+		catalogItemBuy.classList.remove('visually-hidden');
+	});
+	catalogItem[i].addEventListener('mouseleave', function(evt){
+		var catalogItemBuy = this.querySelector('.catalog-item-buy');
+		catalogItemBuy.classList.add('visually-hidden');
+	});
+}
