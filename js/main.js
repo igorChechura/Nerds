@@ -106,11 +106,11 @@ toggleModal();
 var rangeSlider = document.getElementById('rangeSlider');
 
 noUiSlider.create(rangeSlider, {
-    start: [20, 80],
+    start: [2000, 10000],
     connect: true,
     range: {
         'min': 0,
-        'max': 100
+        'max': 20000
     }
 });
 
