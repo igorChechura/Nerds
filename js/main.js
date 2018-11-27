@@ -101,6 +101,19 @@ function toggleModal() {
 
 toggleModal();
 
+/* noUiSlider */
+
+var rangeSlider = document.getElementById('rangeSlider');
+
+noUiSlider.create(rangeSlider, {
+    start: [20, 80],
+    connect: true,
+    range: {
+        'min': 0,
+        'max': 100
+    }
+});
+
 /* product card animation */
 
 var catalogItem = document.querySelectorAll('.catalog-item');
