@@ -1356,9 +1356,35 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	bottom: 0;
 
-	padding: 40px 60px;
+	padding-top: 31px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 42px;
+
+	text-align: center;
 
 	background-color: #eeeeee;
+}
+
+.catalog-item-buy h3 {
+	margin: 0;
+	margin-bottom: 18px;
+
+	text-transform: uppercase;
+}
+
+.catalog-item-buy p {
+	margin: 0;
+	margin-bottom: 30px;
+
+	line-height: 18px;
+	color: #666666;
+}
+
+.catalog-item-button {
+	width: 200px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .catalog-item img {
