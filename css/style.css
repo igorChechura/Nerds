@@ -1324,30 +1324,6 @@ input[type="radio"].visually-hidden {
 	border-top-right-radius: 4px;
 }
 
-/* .catalog-item-link:hover,
-.catalog-item-link:focus {
-	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-}
-
-.catalog-item-link:hover path,
-.catalog-item-link:focus path {
-	fill: #4d4d4d;
-}
-
-.catalog-item-link:hover img,
-.catalog-item-link:focus img {
-	border-color: #4d4d4d;
-}
-
-.catalog-item-link:hover + .catalog-item-buy,
-.catalog-item-link:focus + .catalog-item-buy {
-	display: block;
-}
-
-.catalog-item-buy:hover {
-    display: block;
-} */
-
 .catalog-item svg {
 	display: block;
 }
