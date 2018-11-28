@@ -1070,8 +1070,38 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 40px;
 }
 
-.range-slider {
+.range-slider-wrapper {
+	padding: 40px 20px;
 	margin-bottom: 15px;
+
+	background-color: #eeeeee;
+
+	border-radius: 2px;
+}
+
+.range-slider {
+	height: 2px;
+
+	border: none;
+}
+
+.noUi-connects {
+	background-color: #d7dcde;
+	border-radius: none;
+}
+
+.noUi-connect {
+	background-color: #00ca74;
+}
+
+.noUi-horizontal .noUi-handle {
+	top: -10px;
+
+	width: 20px;
+	height: 20px;
+
+	border: none;
+	border-radius: 50%;
 }
 
 .filter-price-columns {
