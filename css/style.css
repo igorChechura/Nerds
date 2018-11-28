@@ -1051,6 +1051,7 @@ input[type="radio"].visually-hidden {
 .filter fieldset {
 	padding: 0;
 	margin: 0;
+	margin-bottom: 60px;
 
 	border: none;
 }
@@ -1062,6 +1063,43 @@ input[type="radio"].visually-hidden {
 	line-height: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+.filter-price legend {
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.range-slider {
+	margin-bottom: 15px;
+}
+
+.filter-price-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.filter-price-column {
+	display: flex;
+	align-items: center;
+}
+
+.filter-price label {
+	line-height: 22px;
+	text-transform: uppercase;
+}
+
+.filter-price-set {
+	box-sizing: border-box;
+	padding: 10px 10px;
+
+	width: 80px;
+	margin-left: 10px;
+
+	background-color: #eeeeee;
+
+	border: none;
+	border-radius: 2px
 }
 
 .filter ul {

@@ -114,6 +114,24 @@ noUiSlider.create(rangeSlider, {
     }
 });
 
+function setPrice() {
+	var noUiHandleLower = document.querySelector('.noUi-handle-lower');
+	var noUiHandleUpper = document.querySelector('.noUi-handle-upper');
+
+	var priceFrom = document.getElementById('price-from');
+	var priceTo = document.getElementById('price-to');
+
+	priceFrom.setAttribute('value', Math.round(noUiHandleLower.getAttribute('aria-valuetext')));
+	priceTo.setAttribute('value', Math.round(noUiHandleUpper.getAttribute('aria-valuetext')));
+
+	priceFrom.setAttribute('disabled', true);
+	priceTo.setAttribute('disabled', true);
+}
+
+setPrice();
+
+rangeSlider.noUiSlider.on('update', setPrice);
+
 /* product card animation */
 
 var catalogItem = document.querySelectorAll('.catalog-item');

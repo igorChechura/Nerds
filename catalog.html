@@ -39,15 +39,15 @@
 				<form class="filter" action="https://echo.htmlacademy.ru" method="GET">
 					<fieldset class="filter-price">
 						<legend>Стоимость:</legend>
-						<div id="rangeSlider"></div>
+						<div class="range-slider" id="rangeSlider"></div>
 						<div class="filter-price-columns">
-							<div>
-								<label for="price-from">От</label>
-								<input type="text" id="price-from">
+							<div class="filter-price-column">
+								<label  for="price-from">От</label>
+								<input class="filter-price-set" type="text" value="2000" id="price-from">
 							</div>
-							<div>
+							<div class="filter-price-column">
 								<label for="price-to">До</label>
-								<input type="text" id="price-to">
+								<input class="filter-price-set" type="text" value="10000" id="price-to">
 							</div>						
 						</div>						
 					</fieldset>
@@ -261,6 +261,6 @@
 	<div class="modal-overlay"></div>
 
 	<script src="js/nouislider.min.js"></script>
-	<script src="js/main.js"></script>
+	<!-- <script src="js/main.js"></script> -->
 </body>
 </html>
