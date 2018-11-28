@@ -37,9 +37,19 @@
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр шаблонов</h2>
 				<form class="filter" action="https://echo.htmlacademy.ru" method="GET">
-					<fieldset>
+					<fieldset class="filter-price">
 						<legend>Стоимость:</legend>
 						<div id="rangeSlider"></div>
+						<div class="filter-price-columns">
+							<div>
+								<label for="price-from">От</label>
+								<input type="text" id="price-from">
+							</div>
+							<div>
+								<label for="price-to">До</label>
+								<input type="text" id="price-to">
+							</div>						
+						</div>						
 					</fieldset>
 					<fieldset>
 						<legend>Сетка:</legend>
