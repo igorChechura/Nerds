@@ -1051,28 +1051,29 @@ input[type="radio"].visually-hidden {
 .filter fieldset {
 	padding: 0;
 	margin: 0;
-	margin-bottom: 60px;
 
 	border: none;
 }
 
 .filter legend {
-	margin-bottom: 17px;
-
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
+fieldset.filter-price {
+	margin-bottom: 60px;
+}
+
 .filter-price legend {
 	margin: 0;
-	margin-bottom: 40px;
+	margin-bottom: 54px;
 }
 
 .range-slider-wrapper {
-	padding: 40px 20px;
-	margin-bottom: 15px;
+	padding: 38px 20px;
+	margin-bottom: 14px;
 
 	background-color: #eeeeee;
 
@@ -1102,6 +1103,25 @@ input[type="radio"].visually-hidden {
 
 	border: none;
 	border-radius: 50%;
+
+	box-shadow: none;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.noUi-horizontal .noUi-handle:before {
+	width: 4px;
+	height: 4px;
+
+	left: 8px;
+	top: 8px;
+
+	background-color: #ababab;
+
+	border-radius: 50%;
+}
+
+.noUi-horizontal .noUi-handle:after {
+	display: none;
 }
 
 .filter-price-columns {
@@ -1132,6 +1152,19 @@ input[type="radio"].visually-hidden {
 	border-radius: 2px
 }
 
+.filter-grid legend,
+.filter-features legend {
+	margin-bottom: 22px;
+}
+
+fieldset.filter-grid {
+	margin-bottom: 51px;
+}
+
+fieldset.filter-features {
+	margin-bottom: 48px;
+}
+
 .filter ul {
 	padding: 0;
 	margin: 0;
@@ -1144,6 +1177,10 @@ input[type="radio"].visually-hidden {
 .filter-option {
 	margin-bottom: 20px;
 	padding-left: 36px;	
+}
+
+.filter-option:last-child {
+	margin-bottom: 0;
 }
 
 .filter-option label {

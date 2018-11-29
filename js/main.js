@@ -106,11 +106,12 @@ toggleModal();
 var rangeSlider = document.getElementById('rangeSlider');
 
 noUiSlider.create(rangeSlider, {
-    start: [2000, 10000],
-    connect: true,
+	start: [2000, 10000],
+	padding: [0, 1300],
+	connect: true,
     range: {
         'min': 0,
-        'max': 20000
+        'max': 21300
     }
 });
 
@@ -124,8 +125,8 @@ function setPrice() {
 	priceFrom.setAttribute('value', Math.round(noUiHandleLower.getAttribute('aria-valuetext')));
 	priceTo.setAttribute('value', Math.round(noUiHandleUpper.getAttribute('aria-valuetext')));
 
-	priceFrom.setAttribute('disabled', true);
-	priceTo.setAttribute('disabled', true);
+	priceFrom.setAttribute('readonly', true);
+	priceTo.setAttribute('readonly', true);
 }
 
 setPrice();

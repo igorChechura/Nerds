@@ -45,15 +45,15 @@
 						<div class="filter-price-columns">
 							<div class="filter-price-column">
 								<label  for="price-from">От</label>
-								<input class="filter-price-set" type="text" value="2000" id="price-from">
+								<input class="filter-price-set" type="text" name="filter-price-lower" value="2000" id="price-from">
 							</div>
 							<div class="filter-price-column">
 								<label for="price-to">До</label>
-								<input class="filter-price-set" type="text" value="10000" id="price-to">
+								<input class="filter-price-set" type="text" name="filter-price-upper" value="10000" id="price-to">
 							</div>						
 						</div>						
 					</fieldset>
-					<fieldset>
+					<fieldset class="filter-grid">
 						<legend>Сетка:</legend>
 						<ul>
 							<li class="filter-option">
@@ -70,7 +70,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset>
+					<fieldset class="filter-features">
 						<legend>Особенности:</legend>
 						<ul>
 							<li class="filter-option">
