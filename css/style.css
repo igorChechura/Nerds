@@ -1505,6 +1505,8 @@ fieldset.filter-features {
 	background-color: #eeeeee;
 
 	border-radius: 4px;
+
+	transition: background-color 0.3s ease;
 }
 
 .pagination-item a:hover,
