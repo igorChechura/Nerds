@@ -1394,6 +1394,7 @@ fieldset.filter-features {
 
 	padding: 0;
 	margin: 0;
+	margin-bottom: 25px;
 
 	list-style: none
 }
@@ -1475,6 +1476,76 @@ fieldset.filter-features {
 
 	border: 1px solid #e5e5e5;
 	border-top: none;
+}
+
+.pagination-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+}
+
+.pagination-item {
+	margin-right: 13px;
+}
+
+.pagination-item:last-child {
+	margin-right: 0;
+}
+
+.pagination-item a {
+	display: block;
+	padding: 14px 21px;
+
+	font-weight: 500;
+	color: #000000;
+
+	background-color: #eeeeee;
+
+	border-radius: 4px;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+	background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+	color: rgba(0, 0, 0, 0.3);
+
+	background-color: #d5d5d5;
+
+	box-shadow: inset 0 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+	color: #000000;
+
+	background-color: #ffffff;
+
+	box-shadow: none;
+}
+
+
+
+.pagination-item-current a {
+	padding: 11px 18px;
+
+	background-color: #ffffff;
+
+	border: 3px solid #dbdbdb;
+	border-radius: 3px
+}
+
+.pagination-item-next a {
+	padding-left: 78px;
+	padding-right: 78px;
+
+	text-transform: uppercase;
 }
 
 /* section.catalog end */
